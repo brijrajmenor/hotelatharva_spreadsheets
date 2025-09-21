@@ -13,7 +13,7 @@ creds = Credentials.from_service_account_info(service_account_info, scopes=SCOPE
 client = gspread.authorize(creds)
 
 # Load data from Google Sheets
-SHEET_ID = "1O_leCJtr7ns0-v-xJZue5sHeYEYazn7Fu3q7vz1-XQE"
+SHEET_ID = "1polqqd0z2BJKZc_P9m6IQ-IOpCCRi-m0HHANCLweRrM"
 transactions_sheet = client.open_by_key(SHEET_ID).worksheet("Transactions")
 
 def load_transactions():
