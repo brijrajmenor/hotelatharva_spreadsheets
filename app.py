@@ -33,7 +33,7 @@ def load_transactions():
 
 @st.cache_data(ttl=300)
 def load_balances():
-    balance_sheet = spreadsheet.worksheet("currentBalance")
+    balance_sheet = spreadsheet.worksheet("CurrentBalances")
     data = balance_sheet.get_all_records()
     return pd.DataFrame(data)
 
@@ -343,3 +343,4 @@ st.markdown(
 )
 
 st.success("Dashboard Updated Successfully! ✅")
+
