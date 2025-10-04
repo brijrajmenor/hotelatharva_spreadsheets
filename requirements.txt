@@ -8,6 +8,7 @@ click==8.1.8
 colorama==0.4.6
 gitdb==4.0.12
 GitPython==3.1.44
+matplotlib==3.10.1
 google-auth==2.38.0
 google-auth-oauthlib==1.2.1
 gspread==6.2.0
@@ -43,4 +44,5 @@ tornado==6.4.2
 typing_extensions==4.13.0
 tzdata==2025.2
 urllib3==2.3.0
+
 watchdog==6.0.0
