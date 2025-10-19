@@ -14,6 +14,47 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+# Festive Diwali Marquee Banner
+st.markdown(
+    """
+    <style>
+    .fixed-marquee {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(90deg, #ff8800, #ff4b2b, #ff8800);
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
+        padding: 10px 0;
+        z-index: 9999;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+        letter-spacing: 0.5px;
+    }
+    .marquee-content {
+        display: inline-block;
+        white-space: nowrap;
+        padding-left: 100%;
+        animation: scroll-left 25s linear infinite;
+    }
+    @keyframes scroll-left {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+    </style>
+
+    <div class="fixed-marquee">
+      <div class="marquee-content">
+        🪔✨ Wishing our incredible team a joyous and prosperous Diwali! 🌟 
+        May this Festival of Lights bring happiness, success, and togetherness to all. 
+        🎆 Happy Diwali! — From <strong>Netcreators Automation</strong> 🎇
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Authenticate with Google Sheets
 service_account_info = st.secrets["gcp_service_account"]
@@ -343,4 +384,5 @@ st.markdown(
 )
 
 st.success("Dashboard Updated Successfully! ✅")
+
 
