@@ -47,9 +47,7 @@ st.markdown(
 
     <div class="fixed-marquee">
       <div class="marquee-content">
-        🪔✨ Wishing our incredible team a joyous and prosperous Diwali! 🌟 
-        May this Festival of Lights bring happiness, success, and togetherness to all. 
-        🎆 Happy Diwali! — From <strong>Netcreators Automation</strong> 🎇
+        For all queries in regards to Hotel Automation, pls contact us on +91-9167584555, or mail us on info@netcreatorsautomation.in
       </div>
     </div>
     """,
@@ -384,5 +382,6 @@ st.markdown(
 )
 
 st.success("Dashboard Updated Successfully! ✅")
+
 
 
