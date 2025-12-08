@@ -95,7 +95,12 @@ if "Timestamp" in df_transactions.columns:
     df_transactions["Timestamp"] = pd.to_datetime(df_transactions["Timestamp"])
 
 if "Last Updated" in df_balances.columns:
-    df_balances["Last Updated"] = pd.to_datetime(df_balances["Last Updated"])
+   df_balances["Last Updated"] = pd.to_datetime(
+    df_balances["Last Updated"],
+    format="%d/%m/%Y %H:%M:%S",
+    errors="coerce"
+)
+
 
 # Sidebar Filters
 st.sidebar.header("Filters")
@@ -382,6 +387,7 @@ st.markdown(
 )
 
 st.success("Dashboard Updated Successfully! ✅")
+
 
 
 
